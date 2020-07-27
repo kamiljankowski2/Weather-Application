@@ -7,7 +7,7 @@ import Input from './Input'
 const SidePanel = () => {
     const { weatherCon } = useContext(WeatherContext)
     const [weather] = weatherCon
-    const { city, country, icon, temp, main, description } = weather
+    const { city, country, icon, temp, main } = weather
     const date = new Date() + 1;
     const day = date.slice(0, 3)
     const hour = date.slice(16, 21)

@@ -13,15 +13,9 @@ const Input = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        let url = null;
-        if (location.protocol === 'http:') {
-            url = `http://api.openweathermap.org/data/2.5/weather?q=${value}&units=metric&appid=d156afba53790bfb086d435eddc11734`
-        } else {
-            url = `http://api.openweathermap.org/data/2.5/weather?q=${value}&units=metric&appid=d156afba53790bfb086d435eddc11734`
-        }
 
         if (value.length > 0) {
-            const response = await fetch(url)
+            const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${value}&units=metric&appid=d156afba53790bfb086d435eddc11734`)
             if (response.ok) {
                 const data = await response.json()
                 const { name, main, weather, sys, wind, timezone } = data

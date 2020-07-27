@@ -1,11 +1,10 @@
 import React from 'react';
 import { Nav } from '../style/StyledNav'
-import Input from './Input'
 const Navigation = () => {
     return (
         <Nav>
 
-            <a href="">Code</a>
+            <a href="https://github.com/kamiljankowski2/Weather-Application">Code</a>
         </Nav>
 
     );

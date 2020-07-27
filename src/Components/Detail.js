@@ -5,7 +5,7 @@ const Details = (props) => {
     return (
         <StyledItem>
             <h3>{props.title}</h3>
-            <DetailContent>{props.content}</DetailContent>
+            <DetailContent>{props.content}{props.symbol}</DetailContent>
 
         </StyledItem>
     );
